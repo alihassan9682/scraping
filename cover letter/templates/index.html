@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Generate Cover Letter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Cover Letter Generator</h1>
+    <form method="POST" action="/generate">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="experience">Professional experience</label>
+        <input type="text" class="form-control" id="experience" name="experience" required>
+      </div>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" class="form-control" id="company" name="company" required>
+      </div>
+      <div class="form-group">
+        <label for="job_title">Job Description</label>
+        <textarea class="form-control" id="job_title" name="job_des" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Generate
+      </button>
+    </form>
+  </div>
+</body>
+
+</html>

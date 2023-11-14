@@ -1,0 +1,33 @@
+<!-- generate.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cover Letter Generated</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Cover Letter Generated
+      </h1>
+      <form method="POST" action="/generate_pdf">
+        <div class="form-group">
+        <label for="content"></label>
+        <textarea class="form-control" name="content" rows="20" >
+          {{ message }}</textarea>
+
+      </div>
+      <div class="form-group">
+        <input type="text" hidden class="form-control" id="name" name="name" value = "{{name}}" required>
+      </div>
+   <button type="submit" class="btn btn-primary">
+          Download PDF
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
